@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BooksPage} from "./components/pages/BooksPage";
+import {AddBookPage} from "./components/pages/AddBookPage";
+import {Header} from "./components/Header";
+import {Navbar} from "./components/Navbar";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <div>
+            <Header/>
+            <Navbar/>
+            <Routes>
+                <Route path='/books' element={<BooksPage/>} />
+                {/*<Route path='/books/:uuid' element={<BookItemPage/>} />*/}
+                <Route path='/books/add' element={<AddBookPage/>}/>
+            </Routes>
+        </div>
+    </BrowserRouter>
   );
 }
 
