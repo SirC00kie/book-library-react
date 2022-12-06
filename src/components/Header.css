@@ -1,0 +1,8 @@
+.page-header{
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  background-color: #BD5F1F;
+  color: black;
+  padding: 0 2rem;
+}

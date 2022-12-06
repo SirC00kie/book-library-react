@@ -1,0 +1,12 @@
+.nav-bar{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #40AFC2;
+    color: black;
+    padding: 0 10px;
+}
+.nav-bar .nav-link{
+    color: black;
+    padding-right: 20px;
+}
