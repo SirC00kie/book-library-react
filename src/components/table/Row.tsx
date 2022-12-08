@@ -1,5 +1,6 @@
 import React from "react";
 import {IBook} from "../../entities/IBook";
+import {Link} from "react-router-dom";
 
 export const Row: React.FC<IBook> = ({
     id,
@@ -12,7 +13,7 @@ export const Row: React.FC<IBook> = ({
 
     return (
         <tr>
-            <td>{id}</td>
+            <td><Link key={id} to={`/books/${id}`}> {id} </Link></td>
             <td>{name}</td>
             <td>{type}</td>
             <td>{content}</td>

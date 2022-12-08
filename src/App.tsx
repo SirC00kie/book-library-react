@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {BooksPage} from "./components/pages/BooksPage";
-import {AddBookPage} from "./components/pages/AddBookPage";
 import {Header} from "./components/Header";
 import {Navbar} from "./components/Navbar";
+import {BookItemPage} from "./components/pages/BookItemPage";
+import {AddBookPage} from "./components/pages/AddBookPage";
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
             <Navbar/>
             <Routes>
                 <Route path='/books' element={<BooksPage/>} />
-                {/*<Route path='/books/:uuid' element={<BookItemPage/>} />*/}
+                <Route path='/books/:uuid' element={<BookItemPage/>} />
                 <Route path='/books/add' element={<AddBookPage/>}/>
             </Routes>
         </div>

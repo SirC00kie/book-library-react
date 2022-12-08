@@ -12,7 +12,7 @@ export const BooksPage: FC = () => {
 
     async function fetchBooks(){
         try {
-            const response = await axios.get<IBook[]>('127.0.0.1:10000/books')
+            const response = await axios.get<IBook[]>('/books')
             setBooks(response.data)
         }
         catch(e){
