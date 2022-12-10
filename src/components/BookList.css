@@ -9,20 +9,17 @@
     background: #fff!important;
 }
 .books-table th {
+    text-align: center;
     font-weight: bold;
     padding: 7px;
     background: #E39871;
-    border: none;
-    text-align: left;
+    border: 1px solid #000000;
     font-size: 15px;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #E39871;
 }
 .books-table td {
+    text-align: center;
     padding: 7px;
-    border: none;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border: 1px solid #000000;
     font-size: 15px;
 }
 

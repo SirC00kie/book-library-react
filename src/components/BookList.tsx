@@ -3,7 +3,6 @@ import React from "react";
 import {Head} from "./table/Head";
 import {Row} from "./table/Row";
 import './BookList.css'
-import {Link} from "react-router-dom";
 
 interface BookListProps{
     books: IBook[]
@@ -26,6 +25,7 @@ export const BookList: React.FC<BookListProps> = ({ books}) =>{
                         year={book.year}
                         description={book.description}
                     />
+
                 ))
             }
             </tbody>

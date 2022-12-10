@@ -5,8 +5,9 @@ import './Navbar.css'
 export const Navbar = () => {
     return(
         <div className="nav-bar">
-            <NavLink className="nav-link" to='/books'> Книги </NavLink>
-            <NavLink className="nav-link" to='/books/add'> Добавить </NavLink>
+            <NavLink className="nav-link" to=''> Главная </NavLink>
+            <NavLink className="nav-link" to='/books'> Библиотека Эл. Пособий </NavLink>
+            <NavLink className="nav-link" to='/books/add'> Добавить Эл. Пособие </NavLink>
         </div>
     )
 }
