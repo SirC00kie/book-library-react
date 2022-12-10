@@ -2,6 +2,7 @@ import React, {FC, useEffect, useState} from "react";
 import {IBook} from "../../entities/IBook";
 import {useNavigate, useParams} from "react-router-dom";
 import axios from "axios";
+import './BookItemPage.css'
 
 
 export const BookItemPage: FC = (props) => {
@@ -36,14 +37,16 @@ export const BookItemPage: FC = (props) => {
     }
 
     return(
-      <div>
-            <h1>{book?.name}</h1>
-            <div>
-                <p>{book?.type} {book?.content} {book?.year}</p>
-                {book?.description}
+      <div className="book-item-page">
+            <h1 className="book-name">{book?.name}</h1>
+            <div className="book-info">
+                <p>Тип публикации: {book?.type} {book?.year}</p>
+                <p>Содержание: {book?.content}</p>
+                <p>Автор: {book?.author}</p>
+                <p>Год: {book?.year}</p>
+                <p>{book?.description}</p>
             </div>
-           <input type="button" name="submit" value="Удалить" onClick={deleteBook}/>
-           <input type="button" name="submit" value="Изменить" onClick={deleteBook}/>
+           <input className="delete-btn" type="button" value="Удалить" onClick={deleteBook}/>
       </div>
   )
 }
