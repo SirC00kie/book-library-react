@@ -40,7 +40,7 @@ export const BookItemPage: FC = (props) => {
       <div className="book-item-page">
             <h1 className="book-name">{book?.name}</h1>
             <div className="book-info">
-                <p>Тип публикации: {book?.type} {book?.year}</p>
+                <p>Тип публикации: {book?.type}</p>
                 <p>Содержание: {book?.content}</p>
                 <p>Автор: {book?.author}</p>
                 <p>Год: {book?.year}</p>
